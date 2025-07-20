@@ -6,6 +6,7 @@
         <Nullable>enable</Nullable>
         <IsPackable>false</IsPackable>
         <RootNamespace>Aleksbtz.Autofac.RegistrationsValidation.Tests</RootNamespace>
+        <Authors>Aleksandr Butuzov</Authors>
     </PropertyGroup>
 
     <ItemGroup>
