@@ -1,3 +1,6 @@
+[![MIT](https://img.shields.io/github/license/aleksbtz/Autofac.RegistrationsValidation)](LICENSE)
+[![Nuget](https://img.shields.io/nuget/v/Aleksbtz.Autofac.RegistrationsValidation)](https://www.nuget.org/packages/Aleksbtz.Autofac.RegistrationsValidation/)
+
 This library allows to validate [Autofac](https://github.com/autofac/Autofac) container for registration errors.
 
 ## Main Features:
