@@ -11,22 +11,21 @@ public static class ReflectionActivatorExtensions
     public static (RequiredServicesSearchStatus, HashSet<Type>) GetRequiredTypes(this ReflectionActivator activator,
         IComponentContext context)
     {
-        var availableConstructors = new List<ConstructorInfo>();
+        var availableConstructors = Array.Empty<ConstructorInfo>();
         try
         {
-            availableConstructors = activator.ConstructorFinder.FindConstructors(activator.LimitType).ToList();
+            availableConstructors = activator.ConstructorFinder.FindConstructors(activator.LimitType);
         }
         catch (Exception)
         {
             // ignored
         }
 
-        if (availableConstructors.Count == 0)
+        if (availableConstructors.Length == 0)
             return (RequiredServicesSearchStatus.NoAvailableConstructors, new HashSet<Type>());
         var defaultParameters = new Parameter[] { new AutowiringParameter(), new DefaultValueParameter() };
-        var binders = availableConstructors.Select(ctorInfo => new ConstructorBinder(ctorInfo));
-        var validBindings = binders
-            .Select(binder => binder.Bind(defaultParameters, context))
+        var validBindings = availableConstructors
+            .Select(constructorInfo => new ConstructorParameterBinding(constructorInfo, defaultParameters, context))
             .Where(constructorBinding => constructorBinding.CanInstantiate)
             .ToArray();
 
@@ -36,7 +35,7 @@ public static class ReflectionActivatorExtensions
             return (RequiredServicesSearchStatus.NotEnoughRegistrationsToUseAnyConstructors, parametersTypes);
         }
 
-        BoundConstructor resolveConstructorBinding;
+        ConstructorParameterBinding resolveConstructorBinding;
         try
         {
             resolveConstructorBinding =
