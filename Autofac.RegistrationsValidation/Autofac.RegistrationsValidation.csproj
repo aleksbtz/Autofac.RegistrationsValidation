@@ -8,7 +8,7 @@
         <AssemblyName>Aleksbtz.Autofac.RegistrationsValidation</AssemblyName>
         <Title>Aleksbtz.Autofac.RegistrationsValidation</Title>
         <Authors>Aleksandr Butuzov</Authors>
-        <Description>An Autofac extensions library which allows to validate the container on-build for captive dependencies and missing registration.</Description>
+        <Description>An Autofac extensions library which allows to validate the container on-build for captive dependencies and missing registrations.</Description>
         <GeneratePackageOnBuild>true</GeneratePackageOnBuild>
         <PackageVersion>0.2.0</PackageVersion>
         <PackageProjectUrl>https://github.com/aleksbtz/Autofac.RegistrationsValidation</PackageProjectUrl>
