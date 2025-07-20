@@ -1,0 +1,27 @@
+﻿<Project Sdk="Microsoft.NET.Sdk">
+
+    <PropertyGroup>
+        <TargetFramework>net6.0</TargetFramework>
+        <ImplicitUsings>enable</ImplicitUsings>
+        <Nullable>enable</Nullable>
+        <RootNamespace>Aleksbtz.Autofac.RegistrationsValidation</RootNamespace>
+        <AssemblyName>Aleksbtz.Autofac.RegistrationsValidation</AssemblyName>
+        <Title>Aleksbtz.AutofacValidation.Extensions</Title>
+        <Authors>Aleksandr Butuzov</Authors>
+        <Description>An Autofac extensions library which allows to validate the container on-build for captive dependencies and missing registration.</Description>
+        <GeneratePackageOnBuild>true</GeneratePackageOnBuild>
+        <PackageVersion>0.0.1</PackageVersion>
+        <PackageProjectUrl>https://github.com/aleksbtz/AutofacValidation.Extensions</PackageProjectUrl>
+        <PackageLicenseUrl>https://github.com/aleksbtz/AutofacValidation.Extensions/blob/master/LICENSE</PackageLicenseUrl>
+        <RepositoryUrl>https://github.com/aleksbtz/AutofacValidation.Extensions</RepositoryUrl>
+    </PropertyGroup>
+
+    <ItemGroup>
+        <None Include="..\LICENSE" Pack="true" PackagePath="\"/>
+    </ItemGroup>
+
+    <ItemGroup>
+      <PackageReference Include="Autofac" Version="6.0.0" />
+    </ItemGroup>
+
+</Project>
