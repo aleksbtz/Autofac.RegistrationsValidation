@@ -6,14 +6,14 @@
         <Nullable>enable</Nullable>
         <RootNamespace>Aleksbtz.Autofac.RegistrationsValidation</RootNamespace>
         <AssemblyName>Aleksbtz.Autofac.RegistrationsValidation</AssemblyName>
-        <Title>Aleksbtz.AutofacValidation.Extensions</Title>
+        <Title>Aleksbtz.Autofac.RegistrationsValidation</Title>
         <Authors>Aleksandr Butuzov</Authors>
         <Description>An Autofac extensions library which allows to validate the container on-build for captive dependencies and missing registration.</Description>
         <GeneratePackageOnBuild>true</GeneratePackageOnBuild>
         <PackageVersion>0.0.1</PackageVersion>
-        <PackageProjectUrl>https://github.com/aleksbtz/AutofacValidation.Extensions</PackageProjectUrl>
-        <PackageLicenseUrl>https://github.com/aleksbtz/AutofacValidation.Extensions/blob/master/LICENSE</PackageLicenseUrl>
-        <RepositoryUrl>https://github.com/aleksbtz/AutofacValidation.Extensions</RepositoryUrl>
+        <PackageProjectUrl>https://github.com/aleksbtz/Autofac.RegistrationsValidation</PackageProjectUrl>
+        <PackageLicenseUrl>https://github.com/aleksbtz/Autofac.RegistrationsValidation/blob/master/LICENSE</PackageLicenseUrl>
+        <RepositoryUrl>https://github.com/aleksbtz/Autofac.RegistrationsValidation</RepositoryUrl>
     </PropertyGroup>
 
     <ItemGroup>

@@ -59,7 +59,7 @@ public static class Program
 
 On call the 'Build' method, the following error will be thrown:
 ```
-Unhandled exception. AutofacValidation.Extensions.Models.Errors.DiValidationException: DI container validation errors:
+Unhandled exception. Aleksbtz.Autofac.RegistrationsValidation.Models.Errors.DiValidationException: DI container validation errors:
 RequiredServicesSearchFailed:
     B registration has error: NotEnoughRegistrationsToUseAnyConstructors. Try add: A
 
