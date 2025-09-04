@@ -11,7 +11,7 @@
         <Description>An Autofac extensions library which allows to validate the container on-build for captive dependencies and missing registrations.</Description>
         <GeneratePackageOnBuild>true</GeneratePackageOnBuild>
         <PackageId>Aleksbtz.Autofac.RegistrationsValidation</PackageId>
-        <PackageVersion>0.1.0-alpha</PackageVersion>
+        <PackageVersion>0.1.0</PackageVersion>
         <PackageProjectUrl>https://github.com/aleksbtz/Autofac.RegistrationsValidation</PackageProjectUrl>
         <PackageReadmeFile>README.md</PackageReadmeFile>
         <RepositoryUrl>https://github.com/aleksbtz/Autofac.RegistrationsValidation</RepositoryUrl>
